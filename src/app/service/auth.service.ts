@@ -5,7 +5,7 @@ import { User } from '../model/User';
 import { UserLogin } from '../model/UserLogin';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root'  
 })
 export class AuthService {
 
@@ -15,9 +15,9 @@ entrar(userLogin: UserLogin): Observable<UserLogin>{
   return this.http.post<UserLogin>('http://localhost:8080/usuarios/logar', userLogin)
 
 }
-
+//dois pontos é a tipagem 
 cadastrar(user: User):Observable<User>{
-  return this.http.post<User>('http://localhost:8080/usuarios/logar', user)
+  return this.http.post<User>('http://localhost:8080/usuarios/cadastrar', user)
 }
 
 }
