@@ -11,7 +11,7 @@ import { AuthService } from '../service/auth.service';
 })
 export class EntrarComponent implements OnInit {
 
-  userLogin: UserLogin = new UserLogin
+  userLogin: UserLogin = new UserLogin()
 
 
   constructor(
@@ -24,7 +24,7 @@ export class EntrarComponent implements OnInit {
   }
 
   entrar(){
-    this.auth.entrar(this.userLogin).subscribe((resp:UserLogin)=>{
+    this.auth.entrar(this.userLogin).subscribe((resp: UserLogin)=>{
       this.userLogin = resp
 
       environment.token = this.userLogin.token
@@ -41,15 +41,12 @@ export class EntrarComponent implements OnInit {
       console.log(environment.foto)
 
 
-      this.router.navigate(['/inicio'])},
-      erro =>{
+      this.router.navigate(['/inicio'])
+    },erro => {
         if (erro.status == 500){
           alert('Usuario ou senha incorretos, tente novamente')
         }
-      }
-      
-      
-      )
+      })
 
   }
 

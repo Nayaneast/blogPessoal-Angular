@@ -12,8 +12,7 @@ const routes: Routes = [
   {path:'cadastrar', component:CadastrarComponent},
 
   {path:'inicio', component:InicioComponent}
-    
-
+  
 ];
 
 @NgModule({
