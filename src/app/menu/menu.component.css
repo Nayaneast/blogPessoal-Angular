@@ -1,7 +1,18 @@
+
+.ff{
+    font-family: Tahoma,sans-serif;
+}
+
+
 .fs-16{
     font-size: 16pt;
 }
 
 a{
     cursor: pointer;
+}
+
+
+.bg-b{
+    background-color: #040a09;
 }

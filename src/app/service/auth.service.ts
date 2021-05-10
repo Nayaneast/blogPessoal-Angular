@@ -28,7 +28,7 @@ export class AuthService {
     let ok: boolean = false
 
     if (environment.token != '') {
-      ok = false
+      ok = true
     }
     return ok
   }
