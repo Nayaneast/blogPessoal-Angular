@@ -24,8 +24,8 @@ export class AuthService {
 
 // vai verificar se o environment foi preenchido (token)
   logado() {
-    //let ok = false  
-    let ok: boolean = false
+    let ok = false  
+   //let ok: boolean = false
 
     if (environment.token != '') {
       ok = true

@@ -20,6 +20,8 @@ const routes: Routes = [
 
   {path: 'tema-edit/:id', component: TemaEditComponent},
   {path: 'tema-delete/:id', component: TemaDeleteComponent}
+
+
   
 ];
 
